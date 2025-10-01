@@ -9,7 +9,7 @@
   <body class="flex justify-center items-center h-screen">
     <!-- Container -->
     <div
-      class="bg-gray-200 h-auto py-6 px-10 border-solid border-2 rounded-md flex justify-center"
+      class="bg-gray-100 h-auto py-6 px-10 border-solid border-2 border-gray-200 shadow-sm rounded-md flex justify-center"
     >
       <form>
         <!-- title -->
@@ -18,25 +18,25 @@
         <!-- container for writing the tasks -->
         <div>
           <label for="task"></label>
-          <input type="text" class="w-full p-1 bg-transparent placeholder:text-gray-500 text-gray-800 text-sm border border-gray-500 rounded-sm transition duration-300 ease focus:outline-none focus:border-gray-400 hover:border-gray-300 shadow-sm focus:shadow" placeholder="Type here..." />
+          <input type="text" class="w-full p-1 bg-transparent placeholder:text-gray-500 text-gray-800 border border-gray-500 rounded-sm transition duration-300 ease focus:outline-none focus:border-gray-400 hover:border-gray-300 shadow-sm focus:shadow" placeholder="Type here..." />
         </div>
         <!-- button -->
         <div>
-          <!-- TODO: shadow-bottom-black when hover -->
+          <!-- TODO: shadow-bottom-black-solid when hover -->
           <button class="border-solid border-1 border-gray-500 my-2 rounded-sm px-2 py-1 text-black hover:shadow-md">Enter</button>
         </div>
         <!-- container for the tasks with checkboxes -->
         <div class="flex">
-          <input type="text" class="w-full" placeholder="my task" />
-          <input type="checkbox" />
+          <input type="text" class="w-full p-1 mr-2 mb-2 border border-gray-500 rounded-sm shadow-sm focus:shadow focus:outline-none focus:border-gray-400" placeholder="my task" />
+          <input type="checkbox" class="cursor-pointer w-6"/>
         </div>
         <div class="flex">
-          <input type="text" class="w-full" placeholder="my task" />
-          <input type="checkbox" />
+          <input type="text" class="w-full p-1 mr-2 mb-2 border border-gray-500 rounded-sm shadow-sm focus:shadow focus:outline-none focus:border-gray-400" placeholder="my task" />
+          <input type="checkbox" class="cursor-pointer w-6"/>
         </div>
         <div class="flex">
-          <input type="text" class="w-full" placeholder="my task" />
-          <input type="checkbox" />
+          <input type="text" class="w-full p-1 mr-2 mb-2 border border-gray-500 rounded-sm shadow-sm focus:shadow focus:outline-none focus:border-gray-400" placeholder="my task" />
+          <input type="checkbox" class="cursor-pointer w-6"/>
         </div>
       </form>
     </div>
