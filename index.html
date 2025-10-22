@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>My Todo App</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
-  <body class="flex justify-center items-center h-screen">
+  <body class="h-screen flex items-center justify-center">
     <!-- Container -->
-    <div
-      class="bg-gray-100 h-auto py-6 px-10 border-solid border-2 border-gray-200 shadow-sm rounded-md flex justify-center"
-    >
-      <form>
-        <!-- title -->
-        <div class="text-2xl font-medium text-center">Your personal Task Manager</div>
-        <div class="mt-2 mb-1">Enter your task below</div>
-        <!-- container for writing the tasks -->
-        <div>
-          <label for="task"></label>
-          <input type="text" class="w-full p-1 bg-transparent placeholder:text-gray-500 text-gray-800 border border-gray-500 rounded-sm transition duration-300 ease focus:outline-none focus:border-gray-400 hover:border-gray-300 shadow-sm focus:shadow" placeholder="Type here..." />
+    <div class=" w-[400px] h-[500px] border border-black rounded-[12px]">
+      <!-- Title -->
+      <header>
+        <div class="flex flex-col mt-2 px-4 ">
+          
+            <h4 class="text-2xl mb-1">Your personal Task Manager
+            </h4>
+          
+            <span class="text-lg text-light">Enter your task below
+            </span>
+        
         </div>
-        <!-- button -->
-        <div>
-          <!-- TODO: shadow-bottom-black-solid when hover -->
-          <button class="border-solid border-1 border-gray-500 my-2 rounded-sm px-2 py-1 text-black hover:shadow-md">Enter</button>
+      </header>
+      <main>
+        <!-- Task Input -->
+        <div class="flex h-[40px] justify-between mt-4 px-4">
+
+          <input type="text" id="inputTask" class="w-[300px] border-b border-black p-1 focus:outline-hidden text-md" placeholder="Enter your task here">
+
+          <button type="button" id="addTaskBtn" class="w-[40px] border border-black rounded-lg">+</button>
         </div>
-        <!-- container for the tasks with checkboxes -->
-        <div class="flex">
-          <input type="text" class="w-full p-1 mr-2 mb-2 border border-gray-500 rounded-sm shadow-sm focus:shadow focus:outline-none focus:border-gray-400" placeholder="my task" />
-          <input type="checkbox" class="cursor-pointer w-6"/>
+
+        <!-- Place where the tasks will be -->
+        <div id="taskWrapper" class="h-[300px] bg-gray-300 overflow-auto">
+
         </div>
-        <div class="flex">
-          <input type="text" class="w-full p-1 mr-2 mb-2 border border-gray-500 rounded-sm shadow-sm focus:shadow focus:outline-none focus:border-gray-400" placeholder="my task" />
-          <input type="checkbox" class="cursor-pointer w-6"/>
-        </div>
-        <div class="flex">
-          <input type="text" class="w-full p-1 mr-2 mb-2 border border-gray-500 rounded-sm shadow-sm focus:shadow focus:outline-none focus:border-gray-400" placeholder="my task" />
-          <input type="checkbox" class="cursor-pointer w-6"/>
-        </div>
-      </form>
+       
+      </main>
+      <footer>
+        <div class="px-4 mt-4"><span id="dateTxt" class="">14 October 2025 <br> 17:00 </span></div>
+      </footer>
     </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>
