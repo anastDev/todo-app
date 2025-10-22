@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>My Todo App</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>Todo App</title>
   </head>
   <body class="h-screen flex items-center justify-center">
     <!-- Container -->
-    <div class=" w-[400px] h-[500px] border border-black rounded-[12px]">
+    <div class=" w-[400px] h-auto border border-black rounded-[12px]">
       <!-- Title -->
       <header>
         <div class="flex flex-col mt-2 px-4 ">
@@ -23,22 +22,21 @@
         </div>
       </header>
       <main>
-        <!-- Task Input -->
-        <div class="flex h-[40px] justify-between mt-4 px-4">
-
-          <input type="text" id="inputTask" class="w-[300px] border-b border-black p-1 focus:outline-hidden text-md" placeholder="Enter your task here">
-
-          <button type="button" id="addTaskBtn" class="w-[40px] border border-black rounded-lg">+</button>
-        </div>
-
-        <!-- Place where the tasks will be -->
-        <div id="taskWrapper" class="h-[300px] bg-gray-300 overflow-auto">
-
+        <div class="border-b">
+          <!-- Task Input -->
+          <div class="flex h-[38px] justify-between mt-4 px-4">
+            <input type="text" id="inputTask" class="w-[300px] border-b border-black p-1 focus:outline-hidden text-md" placeholder="Enter your task here">
+            <button type="button" id="addTaskBtn" class="text-stone-800 w-[40px] text-xl hover:text-white border border-gray-800 hover:bg-gray-900 focus:outline-none rounded-lg">+</button>
+          </div>
+          
+                <!-- Where the tasks will be -->
+          <div id="tasksWrapper" class="h-[350px] overflow-auto my-4">
+          </div>
         </div>
        
       </main>
-      <footer>
-        <div class="px-4 mt-4"><span id="dateTxt" class="">14 October 2025 <br> 17:00 </span></div>
+      <footer class="h-[35px] mt-2">
+        <span class="px-4" id="dateTxt">14 October 2025 17:00 </span>
       </footer>
     </div>
 
