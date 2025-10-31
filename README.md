@@ -1,11 +1,15 @@
-# ✅ Task Manager App
+# Task Manager App
 
 A simple responsive **To-Do List** web application built with **HTML**, **Tailwind CSS** and **Vanilla JavaScript**.
 
+## Live Demo
+
+[Link to live site](https://anastdev.github.io/todo-app/) 
 
 ## 🧠 About the Project 
 
 This project was created to practise **DOM Manipulation** and **Event Handling**.
+
 
 ## 🚀 Features
 
@@ -19,11 +23,7 @@ This project was created to practise **DOM Manipulation** and **Event Handling**
 
 [Clone the repository](https://github.com/anastDev/todo-app.git)
 
-[Live Demo to be added]: #
-
-[Img of the app would be also added]: #
-
-###  Future Improvements
+### Future Improvements
 
 - **Clear Completed Tasks** button
 - **Dark Mode** toggle
